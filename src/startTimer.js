@@ -5,7 +5,7 @@ import { endTimer } from "./endTimer.js"
 const Button = document.querySelector("#Button")
 const Value_timer = document.querySelector("#valueTimer")
 
-let timer_count_down = 11 * 60 // 25 minutes
+let timer_count_down = 25 * 60 // 25 minutes
 let timer_started = false
 let timer_paused = false
 
