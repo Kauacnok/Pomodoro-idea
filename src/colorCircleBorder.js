@@ -1,4 +1,4 @@
-import { Button } from "./startTimer.js"
+import { Button } from "./timer_actions/startTimer.js"
 
 const Border_circle = document.querySelectorAll(".Border_circle")
 
