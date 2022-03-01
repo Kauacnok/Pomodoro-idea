@@ -1,9 +1,9 @@
 import { id_interval, timer_started, updateTimerForBrowser, Button } from "./startTimer.js"
-import { ColorBorderWhenEnd } from "../colorCircleBorder.js"
+import { ColorBorder } from "../colorCircleBorder.js"
 
 function endTimer() {
     updateTimerForBrowser()
-    ColorBorderWhenEnd()
+    ColorBorder("#d85d5d", "#d85d5d", "Terminou o tempo")
     clearInterval(id_interval)
     Button.style.cursor = "default"
 }

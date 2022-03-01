@@ -1,4 +1,4 @@
-import { ColorBorderWhenStart } from "../colorCircleBorder.js"
+import { ColorBorder } from "../colorCircleBorder.js"
 import { pauseTimer } from "./pauseTimer.js"
 import { endTimer } from "./endTimer.js"
 import { intervalTimer } from "./intervalTimer.js"
@@ -26,7 +26,7 @@ function startTimer() {
         timer_started = true
         timer_count_down = 25 * 60 // 25 minutes        
         colorTaskCircle("#90ee90")
-        ColorBorderWhenStart()
+        ColorBorder("#90ee90", "#fdfd81", "Pausar")
         loopTimer()
     } else if (timer_started == true & timer_paused == false) {
         timer_paused = true

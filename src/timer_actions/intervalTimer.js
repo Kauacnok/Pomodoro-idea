@@ -5,7 +5,6 @@ var seconds = intervalTimer_count_down % 60
 var minutes = Math.floor(intervalTimer_count_down / 60)
 let clearIntervalTimer = ""
 
-
 function intervalTimer() {
     intervalTimer_count_down = 5 * 60 // 5 minutes
     clearIntervalTimer = setInterval(() => {
