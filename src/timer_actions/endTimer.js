@@ -2,13 +2,12 @@ import { id_interval, timer_started, updateTimerForBrowser, Button } from "./sta
 import { ColorBorder } from "../colorCircleBorder.js"
 
 const Audio = document.querySelector("#audio")
+Audio.volume -= 0.6
 
 function endTimer() {
     updateTimerForBrowser()
     ColorBorder("#d85d5d", "#d85d5d", "Terminou o tempo")
-    clearInterval(id_interval)
     Audio.play()
-    Audio.volume -= 0.6
     Button.style.cursor = "default"
 }
 

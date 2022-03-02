@@ -44,6 +44,7 @@ function loopTimer() {
             updateTimerForBrowser()
         } else {
             Button.removeEventListener("click", startTimer)
+            clearInterval(id_interval)
             endTimer()
             intervalTimer()
             count_of_tasks = count_of_tasks + 1
