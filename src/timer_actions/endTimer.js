@@ -1,8 +1,6 @@
 import { id_interval, timer_started, updateTimerForBrowser, Button } from "./startTimer.js"
 import { ColorBorder } from "../colorCircleBorder.js"
-
-const Audio = document.querySelector("#audio")
-Audio.volume -= 0.6
+import { Audio } from "../Audio.js"
 
 function endTimer() {
     updateTimerForBrowser()
@@ -11,4 +9,4 @@ function endTimer() {
     Button.style.cursor = "default"
 }
 
-export { endTimer, timer_started, id_interval }
+export { Audio, endTimer, timer_started, id_interval }
