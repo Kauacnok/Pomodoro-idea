@@ -7,10 +7,10 @@ let isLightTheme = ""
 function configureTheToggleButton() {
 	if (isLightTheme) {
 		ToggleButton[0].style.justifyContent = "right"
-		ToggleButton[2].src = "../assets/moon.svg"
+		ToggleButton[2].src = "https://raw.githubusercontent.com/Kauacnok/Pomodoro-idea/main/assets/moon.svg"
 	} else {
 		ToggleButton[0].style.justifyContent = "left"
-		ToggleButton[2].src = "../assets/sun.svg"
+		ToggleButton[2].src = "https://raw.githubusercontent.com/Kauacnok/Pomodoro-idea/main/assets/sun.svg"
 	}
 }
 
